@@ -3,7 +3,8 @@
 This repository contains demos and examples to help you create graphic designs
 with the **protograf** library.
 
-Please see https://github.com/gamesbook/protograf
+Please see https://github.com/gamesbook/protograf for the code; and
+https://protograf.readthedocs.io/en/latest/index.html for documentation.
 
 ## Disclaimer
 
@@ -18,4 +19,4 @@ they will give you a good start.
 
 ## Examples
 
-Please check out [the examples](https://github.com/protograf-demo/tree/master/examples/README.md).
+Please check out [the examples](examples/README.md).

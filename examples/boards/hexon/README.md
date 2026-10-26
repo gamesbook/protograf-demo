@@ -42,9 +42,11 @@ hills and rivers; and a custom Python function to draw all the elements
 that make up the trees.
 
 
-# Map No. 1
+## Map No. 1
 
-The [first map script](board_01.py) contains ...
+The [first map script](board_01.py) contains a roads, trees, towns and hills.
+
+Some snippets from this file are shown below.
 
 ```python
 
@@ -85,3 +87,12 @@ The file created by **protograf** looks as follows:
 There is always some loss of quality in a bitmap image; so the PDF is the best
 file to use as it contains scaleable vector graphics. Thus it can be shrunk or
 enlarged with *no* loss of quality; see [Map 1 PDF](hexon01.pdf).
+
+
+## Map No. 2
+
+TODO!
+
+## Map No. 3
+
+TODO!
