@@ -76,7 +76,7 @@ Circle(common=hill, cxy=hg.cxy("0205"))
 
 The original file looks as follows:
 
-![Bob Cordery Map 1](Operation Barbarossa Minicampaign Counterattack! 01.jpg)
+![Bob Cordery Map 1](Operation%20Barbarossa%20Minicampaign%20Counterattack!%2001.jpg)
 
 The file created by **protograf** looks as follows:
 

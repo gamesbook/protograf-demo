@@ -1,8 +1,7 @@
-## Examples
+## Board Examples
 
-# Boards
+# HEXON Boards
 
-The [boards example](boards/README.md) shows how different kinds of game boards
-can be designed with **protograf**.
-
-# Cards
+The [hexon example](hexon/README.md) shows how maps for wargames can share
+common terrain features making it straightforward to create a consistent set
+of designs.

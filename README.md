@@ -18,4 +18,4 @@ they will give you a good start.
 
 ## Examples
 
-Please check out [the examples](https://github.com/protograf-demo/tree/master/examples).
+Please check out [the examples](https://github.com/protograf-demo/tree/master/examples/README.md).
