@@ -186,6 +186,7 @@ file to use as it contains scaleable vector graphics. Thus it can be shrunk or
 enlarged with *no* loss of quality; see [Map 2 PDF](hexon02.pdf).
 
 <div id="id-map-three" />
+
 ## Map Three
 
 The [third map script](board_03.py) contains a river, a bridge, trees, hills
