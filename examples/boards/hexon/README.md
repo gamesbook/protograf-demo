@@ -1,26 +1,27 @@
-# HEXON Boards
+# HEXON II Boards
 
 ## Table of Contents
 
-- [1. Background](#background)
-- [2. Approach](#approach)
-- [3. The Terrain File](#the%20terrain%20file)
-- [4. Map One](#map%20one)
-- [5. Map Two](#map%20two)
-- [6. Map Three](#map%20three)
+- [Background](#id-background)
+- [Approach](#id-approach)
+- [The Terrain File](#id-the-terrain-file)
+- [Map One](#id-map-one)
+- [Map Two](#id-map-two)
+- [Map Three](#id-map-three)
 
 
+<div id='id-background'/>
 ## Background
 
 These examples are derived from the boards created by Robert (Bob) Cordery
 and available on his blog at
-https://wargamingmiscellany.blogspot.com/search/label/Wargame%20Map%20Tool
+https://wargamingmiscellany.blogspot.com/2026/07/wargame-map-tool-my-operation.html
 
 He has kindly given me permission to reproduce the boards here.
 
 "HEXON II" is the commercial name for terrain hexes designed for table-top
 wargaming. Each hex is 100 mm (10 cm) from flat-edge to flat-edge. When
-laid out, they form a map on which miniatures can maneover in a battle.
+laid out, they form a map on which miniatures can maneuver in a battle.
 
 It can be useful to record a board layout, either for future use, or to share
 with others, and **protograf** provides a straightforward way to do this.
@@ -30,6 +31,7 @@ works, and how you use *commands* to draw a series of elements, with custom
 properties, onto a page.
 
 
+<div id='id-approach'/>
 ## Approach
 
 Because the maps share common terrain, it makes sense to place common colors
@@ -57,6 +59,7 @@ Each map starts off the same way, by setting up a hexagonal grid using the
 hg = Hexagons(common=grid, fill=HEXES)
 ```
 
+<div id='id-the-terrain-file'/>
 ## The Terrain File
 
 The [terrain file](terrain.py) contains colors, common properties for the
@@ -92,7 +95,7 @@ rectangles, and appear multiple times in a hex, are grouped together in a
 name assigned to the hexagonal grid along with the hex identification in
 which the terrain (trees) must appear.
 
-
+<div id='id-map-one'/>
 ## Map One
 
 The [first map script](board_01.py) contains a road, trees, towns and hills.
@@ -139,7 +142,7 @@ There is always some loss of quality in a bitmap image; so the PDF is the best
 file to use as it contains scaleable vector graphics. Thus it can be shrunk or
 enlarged with *no* loss of quality; see [Map 1 PDF](hexon01.pdf).
 
-
+<div id='id-map-two'/>
 ## Map Two
 
 The [second map script](board_02.py) contains a river, bridges, trees and hills.
@@ -177,10 +180,10 @@ There is always some loss of quality in a bitmap image; so the PDF is the best
 file to use as it contains scaleable vector graphics. Thus it can be shrunk or
 enlarged with *no* loss of quality; see [Map 2 PDF](hexon02.pdf).
 
-
+<div id='id-map-three'/>
 ## Map Three
 
-The [third map script](board_03.py) contains a river, a bridges, trees, hills
+The [third map script](board_03.py) contains a river, a bridge, trees, hills
 and a wall (or fortification line.)
 
 Some snippets from this file are shown below.
