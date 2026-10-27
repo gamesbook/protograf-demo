@@ -26,7 +26,7 @@ from terrain import *
 # ---- draw hexes
 hg = Hexagons(common=grid, fill=HEXES)
 
-# ---- draw wall
+# ---- draw wall/fortification
 GridLine(
     hg,
     start="0202",

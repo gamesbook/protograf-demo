@@ -1,5 +1,5 @@
 """
-Customised terrain for Hexon II hexes map
+Customised terrain for Hexon II hexes
 
 Written by: Derek Hohls
 Created on: 23 Oct 2026
@@ -9,7 +9,7 @@ Notes:
     * Based off of the maps for the design shown in:
         https://wargamingmiscellany.blogspot.com/2026/07/wargame-map-tool-my-operation.html
 """
-from protograf import Create, Common, steps, Triangle, Rectangle
+from protograf import Common, steps, Triangle, Rectangle
 
 # ---- colors
 TOWN = "#7F7F7F"  # grey
@@ -20,34 +20,15 @@ WALL = "#B97A57"  # light brown
 HEXES = "#B5E51D"  # background green
 TREE_LEAF = "#21B04A"  # dark green
 
-# ---- trees
-def trees(grid, location):
-    leaf = Common(
-        side=0.5, height=1,
-        stroke="black",
-        stroke_width=2,
-        fill=TREE_LEAF)
-    trunk = Common(
-        width=0.2, height=0.3,
-        stroke="black",
-        stroke_width=2,
-        fill=ROAD)
-    Triangle(
-        x=grid.cxy(location).x+0.2,
-        y=grid.cxy(location).y+0.7,
-        common=leaf)
-    Rectangle(
-        x=grid.cxy(location).x+0.35,
-        y=grid.cxy(location).y+0.7,
-        common=trunk)
-    Triangle(
-        x=grid.cxy(location).x-0.8,
-        y=grid.cxy(location).y+0.3,
-        common=leaf)
-    Rectangle(
-        x=grid.cxy(location).x-0.65,
-        y=grid.cxy(location).y+0.3,
-        common=trunk)
+# ---- grid
+grid = Common(
+    height=2.5,  # quarter the Hexon II size
+    hex_offset="odd",
+    x=0, y=0,
+    stroke="black",
+    stroke_width=2,
+    rows=8, cols=6,
+)
 
 # ---- hills
 hill = Common(
@@ -78,12 +59,31 @@ river = Common(
     fill=RIVER,
     height=2.5)
 
-# ---- grid
-grid = Common(
-    height=2.5,  # quarter the Hexon II size
-    hex_offset="odd",
-    x=0, y=0,
-    stroke="black",
-    stroke_width=2,
-    rows=8, cols=6,
-)
+# ---- trees
+def trees(grid, location):
+    leaf = Common(
+        side=0.5, height=1,
+        stroke="black",
+        stroke_width=2,
+        fill=TREE_LEAF)
+    trunk = Common(
+        width=0.2, height=0.3,
+        stroke="black",
+        stroke_width=2,
+        fill=ROAD)
+    Triangle(
+        x=grid.cxy(location).x+0.2,
+        y=grid.cxy(location).y+0.7,
+        common=leaf)
+    Rectangle(
+        x=grid.cxy(location).x+0.35,
+        y=grid.cxy(location).y+0.7,
+        common=trunk)
+    Triangle(
+        x=grid.cxy(location).x-0.8,
+        y=grid.cxy(location).y+0.3,
+        common=leaf)
+    Rectangle(
+        x=grid.cxy(location).x-0.65,
+        y=grid.cxy(location).y+0.3,
+        common=trunk)
