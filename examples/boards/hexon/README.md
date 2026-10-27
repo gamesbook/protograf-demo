@@ -10,7 +10,8 @@
 - [Map Three](#id-map-three)
 
 
-<div id='id-background'/>
+<div id="id-background"/>
+
 ## Background
 
 These examples are derived from the boards created by Robert (Bob) Cordery
@@ -31,7 +32,8 @@ works, and how you use *commands* to draw a series of elements, with custom
 properties, onto a page.
 
 
-<div id='id-approach'/>
+<div id="id-approach"/>
+
 ## Approach
 
 Because the maps share common terrain, it makes sense to place common colors
@@ -59,7 +61,8 @@ Each map starts off the same way, by setting up a hexagonal grid using the
 hg = Hexagons(common=grid, fill=HEXES)
 ```
 
-<div id='id-the-terrain-file'/>
+<div id="id-the-terrain-file"/>
+
 ## The Terrain File
 
 The [terrain file](terrain.py) contains colors, common properties for the
@@ -95,7 +98,8 @@ rectangles, and appear multiple times in a hex, are grouped together in a
 name assigned to the hexagonal grid along with the hex identification in
 which the terrain (trees) must appear.
 
-<div id='id-map-one'/>
+<div id="id-map-one" />
+
 ## Map One
 
 The [first map script](board_01.py) contains a road, trees, towns and hills.
@@ -142,7 +146,8 @@ There is always some loss of quality in a bitmap image; so the PDF is the best
 file to use as it contains scaleable vector graphics. Thus it can be shrunk or
 enlarged with *no* loss of quality; see [Map 1 PDF](hexon01.pdf).
 
-<div id='id-map-two'/>
+<div id="id-map-two" />
+
 ## Map Two
 
 The [second map script](board_02.py) contains a river, bridges, trees and hills.
@@ -180,7 +185,7 @@ There is always some loss of quality in a bitmap image; so the PDF is the best
 file to use as it contains scaleable vector graphics. Thus it can be shrunk or
 enlarged with *no* loss of quality; see [Map 2 PDF](hexon02.pdf).
 
-<div id='id-map-three'/>
+<div id="id-map-three" />
 ## Map Three
 
 The [third map script](board_03.py) contains a river, a bridge, trees, hills
